@@ -3,6 +3,9 @@ declare var require: any;
 import "phaser";
 import "./css/styles.css";
 import { BootScene } from "./scenes/BootScene";
+import { UiScene } from "./scenes/UiScene";
+import { GameScene } from "./scenes/GameScene";
+import { MenuScene } from "./scenes/MenuScene";
 
 const Stats = require('stats-js');
 
@@ -35,7 +38,7 @@ const config: GameConfig = {
 			}
 		}
 	},
-	scene: [BootScene]
+	scene: [BootScene, MenuScene, UiScene, GameScene]
 };
 
 // set up game class, and global stuff

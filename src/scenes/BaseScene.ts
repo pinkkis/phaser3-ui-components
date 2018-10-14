@@ -9,7 +9,15 @@ export class BaseScene extends Phaser.Scene {
 		this.game = this.sys.game as KokoGame
 	}
 
+	init(data?: any) {
+
+	}
+
 	preload() {
+
+	}
+
+	create(data?: any) {
 
 	}
 
